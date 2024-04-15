@@ -1,0 +1,36 @@
+@import "../../../color-variables.scss";
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  
+  padding: 20px 40px;
+
+  font-weight: bold;
+  
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &.primary {
+    color: white;
+    background: -webkit-linear-gradient(90deg, $second-color, #4e424b);
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+  }
+  &.primary:hover {
+    background: $third-color;
+  }
+
+  &.secondary {
+    color: black;
+    background: white;
+    font-size: 16px;
+    transition: 0.1s ease-in-out;
+  }
+  &.secondary:hover {
+    color: $third-color;
+  }
+}
